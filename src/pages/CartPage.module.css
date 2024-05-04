@@ -1,0 +1,294 @@
+/* Cart Page CSS */
+.cart {
+  max-width: 75rem;
+  margin: 4rem auto 2rem auto;
+  font-style: italic;
+}
+
+/* cart banner */
+
+.cart-banner {
+  background-color: #f6f9f6;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  align-items: center;
+}
+
+.cart-banner > h2 {
+  font-weight: 500;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+}
+
+.cart-banner > p {
+  color: #b8bec4;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* Show cart */
+.cart > h3 {
+  text-transform: uppercase;
+  color: #222;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Cart container */
+.container {
+  display: flex;
+}
+
+.container .no-cart {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 10rem auto;
+}
+
+.left {
+  flex: 5;
+  margin-right: 2rem;
+}
+
+.left table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.left .heading {
+  background-color: #f8f9fa;
+}
+
+.left tr td {
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+  width: calc(100% / 6);
+}
+
+.left .heading > th {
+  text-align: center;
+  padding: 1.25rem 0;
+  color: #444;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.left tr img {
+  margin: 0 auto;
+  display: block;
+  width: 60%;
+  object-fit: cover;
+}
+
+.number {
+  display: inline-block;
+  font-style: normal;
+  color: #333;
+  font-family: serif;
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.product-name {
+  color: #111;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.price {
+  color: #999;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+.trash {
+  color: #ccc;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.actions {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions a,
+.actions .border {
+  text-decoration: none;
+  color: #333;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.actions a.border {
+  border: 1px solid #000;
+}
+
+.right {
+  flex: 2;
+}
+
+.right > .wrapper {
+  padding: 2.5rem 2.5rem 1rem 2.5rem;
+  background-color: #f8f9fa;
+}
+
+.right > .wrapper > h2 {
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.wrapper > div {
+  display: flex;
+  padding: 0.75rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper > div:nth-child(2) {
+  border-bottom: 1px solid #ccc;
+}
+
+.wrapper > div > h3 {
+  color: #000;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.wrapper > div > p {
+  color: #333;
+}
+
+.wrapper > div > .main-total {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #cbcdd1;
+}
+
+.coupon {
+  padding: 0 2.5rem 2.5rem 2.5rem;
+  background-color: #f8f9fa;
+  width: 100%;
+}
+
+.coupon input {
+  outline: none;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  display: block;
+  width: 100%;
+  color: #555;
+}
+
+.coupon button {
+  width: 100%;
+  border: none;
+  background-color: #383838;
+  color: #eeeded;
+  text-align: center;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.coupon button i {
+  margin-right: 0.5rem;
+}
+
+/* Cart page responsive */
+@media (max-width: 59rem) {
+  .left {
+    flex: 2;
+  }
+  .right {
+    flex: 1;
+  }
+}
+
+@media (max-width: 51rem) {
+  .container {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .left {
+    flex: content;
+    margin-right: 0;
+  }
+  .right {
+    flex: content;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .cart {
+    margin-top: 10rem;
+  }
+
+  .left tr td {
+    padding: 1rem 0 0.25rem 0;
+  }
+
+  .left .heading > th {
+    padding: 0.5rem 0;
+
+    font-size: 0.7rem;
+  }
+
+  .left tr img {
+    width: 100%;
+  }
+
+  .number {
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .product-name {
+    color: #111;
+    font-size: 0.9em;
+  }
+
+  .price {
+    line-height: 1.3;
+    font-size: 0.9rem;
+  }
+  .trash {
+    color: #ccc;
+    cursor: pointer;
+    padding: 0.25rem;
+  }
+
+  .actions {
+    padding: 1.25rem;
+  }
+
+  .actions a {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+  }
+}

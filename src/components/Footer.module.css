@@ -1,0 +1,37 @@
+/* Footer CSS */
+.footer {
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 100%;
+  background-color: #111;
+  font-style: italic;
+}
+
+.footer footer {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 5rem 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer footer > div {
+  flex: 1;
+}
+
+.footer h2 {
+  color: #ccc;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.footer a {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  color: #444;
+  font-weight: 500;
+  font-size: 1rem;
+}

@@ -1,0 +1,100 @@
+.others-info {
+  max-width: 75rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  font-style: italic;
+}
+
+.freeship {
+  background-color: #f8f9fa;
+  display: flex;
+  padding-left: 9rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.freeship > div {
+  flex: 1;
+}
+
+.freeship > div > h3,
+.contact > div > h3 {
+  color: #111;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.freeship > div > p,
+.contact > div > p {
+  color: #b8bec4;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact > div {
+  flex: 1;
+}
+
+.contact form {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  border: 1px solid #ccc;
+}
+
+.contact input {
+  width: 100%;
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 1.25rem 0.75rem;
+  color: #333;
+}
+
+.contact input::placeholder {
+  color: #b1b9c0;
+}
+
+.contact button {
+  padding: 1.25rem 1rem;
+  border: none;
+  outline: none;
+  background-color: #383838;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Others Info responsive */
+@media (max-width: 33.25rem) {
+  .freeship {
+    padding-left: 1.25rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .freeship > div {
+    margin-bottom: 1.5rem;
+  }
+
+  .freeship > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact > div {
+    margin-bottom: 1.25rem;
+  }
+}

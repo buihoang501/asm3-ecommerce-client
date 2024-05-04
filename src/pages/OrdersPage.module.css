@@ -1,0 +1,73 @@
+/* Orders Page CSS */
+.orders {
+  max-width: 75rem;
+  margin: 4rem auto 2rem auto;
+  font-style: italic;
+}
+
+/* cart banner */
+
+.orders-banner {
+  background-color: #f6f9f6;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  align-items: center;
+}
+
+.orders-banner > h2 {
+  font-weight: 500;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+}
+
+.orders-banner > p {
+  color: #999ea3;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.orders-container {
+  min-height: 400px;
+  width: 100%;
+}
+
+.orders-container > table {
+  width: 100%;
+  color: #555;
+  text-align: center;
+  border: none;
+  border-collapse: collapse;
+}
+
+.orders-container > table th {
+  background-color: #f8f9fa;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+.orders-container > table td {
+  padding: 1rem 0.5rem;
+  font-weight: 400;
+  color: #999;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.orders-container > table td:last-child {
+  padding: 0;
+}
+
+.orders-container .view {
+  color: #999;
+  text-decoration: none;
+  border: 2px solid #555;
+  padding: 0.5rem;
+}
+.orders-container .view > span {
+  color: #222;
+  font-size: 1.1rem;
+}

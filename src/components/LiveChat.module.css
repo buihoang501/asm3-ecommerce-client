@@ -1,0 +1,223 @@
+/* Live chat css */
+.live-chat {
+  width: 100%;
+}
+
+.live-chat > .live-chat-btn {
+  position: fixed;
+  z-index: 500;
+  right: 0;
+  bottom: 4rem;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #383838;
+  border: 1px solid #383838;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(240, 34, 19, 0.6);
+}
+
+.live-chat > .live-chat-btn:hover,
+.live-chat > .live-chat-btn.active {
+  background-color: #29cfec;
+  border-color: #fff;
+}
+.live-chat > .live-chat-btn.active > i,
+.live-chat > .live-chat-btn:hover > i {
+  color: #fff;
+}
+.live-chat > .live-chat-btn > i {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.livechat-popup {
+  border-radius: 1rem;
+  background-color: #fff;
+  position: fixed;
+  right: 1rem;
+  bottom: 8rem;
+  z-index: 200;
+  width: 31.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: live-chat 0.5s ease;
+}
+
+.livechat-popup > .container > .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+.livechat-popup > .container > .title > h3 {
+  font-size: 1.1rem;
+}
+.livechat-popup > .container > .title > button {
+  padding: 0.6rem;
+  border: 0;
+  background-color: #e4e7ea;
+  color: #666;
+  font-style: italic;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: opacity 0.25s;
+}
+
+.livechat-popup > .container > .title > button:hover {
+  background-color: #383838;
+  color: #e4e7ea;
+  opacity: 0.8;
+}
+
+.livechat-popup > .container > .content {
+  position: relative;
+  padding: 1rem 1rem 0rem 1rem;
+  height: 300px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.container > .content > .top > p:last-child {
+  margin-bottom: 4rem;
+}
+
+.container > .content > .bottom > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  column-gap: 1rem;
+  width: 100%;
+}
+
+.container > .content > .bottom .client {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.container > .content > .bottom > div:last-child {
+  padding-bottom: 4rem;
+}
+
+.container > .content > .bottom .admin {
+  display: inline-block;
+  max-width: 70%;
+  word-break: break-all;
+}
+.container > .content > .bottom .client > span {
+  display: inline-block;
+  color: #eee;
+  background-color: #48b0f7;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-style: italic;
+  max-width: 70%;
+  word-break: break-all;
+}
+
+.content > .bottom > div > .icon {
+  background-color: #f5f6f7;
+  border-radius: 50%;
+}
+
+.content > .bottom > div > .icon i {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #29cfec;
+}
+
+.content > .bottom .admin {
+  background-color: #f5f6f7;
+  color: #666;
+  font-size: 0.9em;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.message {
+  padding: 1rem 1rem 1rem 2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  background-color: #f9fafb;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.message > .icon {
+  background-color: #f5f6f7;
+  border-radius: 50%;
+}
+
+.message > .icon > i {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #29cfec;
+  cursor: pointer;
+}
+.message > form {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+.message > form > input {
+  color: #6a6a6a;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1rem;
+  background-color: #fff;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 100%;
+}
+
+.message > i {
+  color: #cdcaca;
+  cursor: pointer;
+}
+.message > form > button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+.message > form > button > i {
+  color: #48b0f7;
+  border: none;
+  font-size: 1.1rem;
+}
+
+@keyframes live-chat {
+  0% {
+    opacity: 0;
+    scale: 0.8;
+    rotate: 370deg;
+  }
+
+  50% {
+    rotate: 350deg;
+    scale: 0.9;
+    opacity: 0.9;
+  }
+  100% {
+    rotate: 360deg;
+    scale: 1;
+    opacity: 1;
+  }
+}

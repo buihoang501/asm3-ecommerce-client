@@ -1,0 +1,269 @@
+/* Detail Page CSS */
+.detail {
+  width: 100%;
+  max-width: 75rem;
+  font-style: italic;
+  margin: 5rem auto;
+}
+
+.main {
+  display: flex;
+  column-gap: 1.25rem;
+  margin-bottom: 4rem;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+}
+
+.left .one {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.left .four {
+  flex: 4;
+}
+
+.left .one > img {
+  display: block;
+  width: 80%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.left .four > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right {
+  margin-top: 2rem;
+  flex: 1;
+}
+
+.right > h2 {
+  padding-right: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.1;
+}
+
+.right > h3 {
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.right > p {
+  color: #aaa;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.right > h4 {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.right > h4 > span {
+  text-transform: lowercase;
+  color: #aaa;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.stock {
+  margin-bottom: 1rem;
+}
+.stock > span:first-child {
+  background-color: #9229ee;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.stock > .out-of-stock {
+  background-color: rgb(161, 175, 73);
+  padding: 0.5rem 0.75rem;
+  text-decoration: line-through;
+  user-select: none;
+
+  color: #fff;
+  display: inline-block;
+}
+.stock > .normal {
+  background-color: rgb(26, 30, 27);
+  padding: 0.5rem 0.75rem;
+  user-select: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  display: inline-block;
+}
+
+.quantity {
+  width: 50%;
+  border: 1px solid #ccc;
+  border-right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.quantity button {
+  display: inline-block;
+  border: 0;
+  padding: 0.8rem 1.25rem;
+  background-color: #383838;
+  color: #ddd;
+  font-style: italic;
+  cursor: pointer;
+}
+.quantity > span:first-child {
+  color: #bbb;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.quantity > .number {
+  display: inline-block;
+  font-style: normal;
+  color: #333;
+  font-family: serif;
+  font-size: 1rem;
+}
+
+/* Description */
+.description {
+  margin-bottom: 4rem;
+}
+
+.description > button {
+  display: block;
+  border: 0;
+  padding: 0.8rem 1.25rem;
+  background-color: #383838;
+  color: #ddd;
+  font-style: italic;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.description > h3 {
+  color: #111;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.description p {
+  color: #888;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+/*Related products */
+
+.related-products > div {
+  display: flex;
+}
+
+.related-products > div > div {
+  width: 24.5%;
+  margin-right: 1.25rem;
+  text-align: center;
+}
+
+.related-products > h3 {
+  margin-bottom: 1.25rem;
+  color: #111;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.related-products > div > div > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.related-products > div > div > img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.related-products > div h3 {
+  margin-bottom: 0.25rem;
+  color: #111;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.related-products > div p {
+  color: #b8bec4;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+@media (max-width: 80rem) {
+  .detail {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 65.5rem) {
+  .quantity {
+    width: 80%;
+  }
+}
+
+@media (max-width: 42.5rem) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quantity {
+    width: 100%;
+  }
+  .quantity button {
+    width: 50%;
+  }
+
+  .description > button {
+    width: 50%;
+  }
+
+  .related-products > div > div {
+    width: 49%;
+    margin-right: 1.5rem;
+    text-align: center;
+  }
+}

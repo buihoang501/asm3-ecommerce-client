@@ -1,0 +1,110 @@
+/* Product Popup CSS */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: calc(80% - 5rem);
+  font-style: italic;
+}
+
+.container {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  padding: 1.25rem;
+}
+.hide {
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  padding: 4px;
+  color: #888;
+  cursor: pointer;
+}
+
+.container > div {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.container > div > img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container > div > h3 {
+  margin-top: 4rem;
+  color: #111;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.container > div > h4 {
+  color: #aaa;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.container > div > p {
+  max-width: 85%;
+
+  color: #b8bec4;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.container > div > button {
+  margin-bottom: 4rem;
+
+  font-style: italic;
+  color: #fff;
+  background-color: #383838;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.container > div > button > i {
+  margin-right: 0.5rem;
+}
+
+/* Popup Responsive */
+@media (max-width: 75rem) {
+  .container > div > p {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 47.625rem) {
+  .popup {
+    width: calc(100% - 6rem);
+  }
+}
+
+@media (max-width: 39.5rem) {
+  .container {
+    text-align: center;
+    flex-direction: column;
+    padding: 0 1.25rem;
+  }
+  .container > div > h3 {
+    margin-top: 0;
+  }
+
+  .container > div > button {
+    margin-bottom: 2rem;
+  }
+
+  .hide {
+    bottom: 2rem;
+  }
+}

@@ -1,0 +1,89 @@
+/* Main Navigation CSS */
+
+.nav {
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.nav > div {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.nav nav {
+  padding: 1.25rem 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.nav ul a,
+.nav ul button {
+  text-decoration: none;
+  color: #333;
+  margin-right: 1rem;
+}
+
+.nav i {
+  color: #ccc;
+  margin-right: 0.2rem;
+  font-size: 0.9rem;
+}
+.nav p {
+  font-family: 500;
+  font-size: 1rem;
+  color: #333;
+}
+
+.nav i.black {
+  color: #1d1d1d;
+  margin-left: 0.5rem;
+}
+
+.nav ul a.active {
+  color: #dab46d;
+}
+
+.nav ul a.active i {
+  color: #dab46d;
+}
+
+.nav ul a:hover,
+.nav ul a:hover > i {
+  transition: all 0.2s ease;
+}
+
+.nav ul a:hover,
+.nav ul a:hover > i {
+  color: #dab46d;
+}
+
+.logout {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+/* Main navigation Responsive */
+@media (max-width: 31.25rem) {
+  .nav nav {
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+  }
+}

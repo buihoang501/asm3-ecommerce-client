@@ -1,0 +1,226 @@
+/* Checkout page css */
+
+.checkout {
+  max-width: 75rem;
+  margin: 4rem auto 2rem auto;
+  font-style: italic;
+}
+
+/* checkout banner */
+
+.checkout-banner {
+  background-color: #f6f9f6;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  align-items: center;
+}
+
+.checkout-banner > h2 {
+  font-weight: 500;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+}
+
+.checkout-banner > div {
+  display: flex;
+  align-items: center;
+}
+
+.checkout-banner > div > h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-right: 0.4rem;
+  color: #444;
+}
+
+.checkout-banner > div > p {
+  color: #b8bec4;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.checkout > h3 {
+  color: #111;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+}
+
+.left {
+  margin-right: 2rem;
+  flex: 5;
+}
+.right {
+  flex: 2;
+}
+
+.left .form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  row-gap: 0.5rem;
+}
+
+.left .form-control label {
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.left .form-control input {
+  outline: none;
+  color: #222;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.left .form-control input:placeholder {
+  color: #ccc;
+}
+
+.left button {
+  border: none;
+  color: #ddd;
+  background-color: #383838;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.right > .wrapper {
+  padding: 3rem 2.5rem 3rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.wrapper > h2 {
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.wrapper .item-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrapper .item-order > h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #434343;
+  line-height: 1rem;
+  letter-spacing: -1px;
+}
+
+.wrapper .item-order > p {
+  letter-spacing: -1px;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  color: #9ea7ad;
+}
+
+.wrapper > .total {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.wrapper > .total > h3 {
+  color: #434343;
+  letter-spacing: -1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.wrapper > .total > p {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.error {
+  color: rgb(218, 38, 38);
+}
+
+/* Checkout page responsive */
+@media (max-width: 75rem) {
+  .checkout {
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 59rem) {
+  .left {
+    flex: 2;
+  }
+  .right {
+    flex: 1;
+  }
+}
+
+@media (max-width: 52rem) {
+  .left {
+    flex: 3;
+  }
+  .right {
+    flex: 2;
+  }
+}
+
+@media (max-width: 38rem) {
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .checkout-banner {
+    flex-direction: column;
+  }
+
+  .checkout-banner > h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .checkout-banner > div > h3 {
+    font-size: 0.9rem;
+
+    margin-right: 0.25rem;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .checkout {
+    margin-top: 10rem;
+  }
+}

@@ -1,0 +1,99 @@
+/* Banner CSS */
+.banner {
+  width: 100%;
+  max-width: 75rem;
+  background-color: #f4f5f9;
+  font-style: italic;
+  margin: 4rem auto;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding-top: 50%; /* height/width = 0.5  ( height = 0.5 width) */
+  background-image: url('/public/images/banner1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container > div {
+  position: absolute;
+  top: 50%;
+  padding-left: 5rem;
+  transform: translateY(-50%);
+}
+
+.container > div > p {
+  margin-bottom: 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #b1b9c0;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  text-shadow: 0 0 0.313rem rgba(0, 0, 0, 0.08);
+}
+
+.container > div > h2 {
+  font-size: 3rem;
+  max-width: 25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+}
+
+.container > div > a {
+  text-decoration: none;
+  color: #ccc;
+  background-color: #383838;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+}
+
+/* Responsive Banner */
+
+@media (max-width: 75rem) {
+  .banner {
+    width: calc(100% - 2.5rem);
+  }
+  .container > div {
+    padding-left: 2.5rem;
+  }
+  .container > div > h2 {
+    font-size: 1.75rem;
+    max-width: 15rem;
+  }
+  .container > div > a {
+    margin-top: -1rem;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .banner {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 25rem) {
+  .container > div > h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  .container > div > p {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 21rem) {
+  .container > div > h2 {
+    display: none;
+  }
+  .container > div > p {
+    display: none;
+  }
+  .container > div > a {
+    margin: 0;
+    padding: 0.5rem 1.25rem;
+  }
+}

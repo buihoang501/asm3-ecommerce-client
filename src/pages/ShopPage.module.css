@@ -1,0 +1,207 @@
+/* Shope page css */
+.shop {
+  max-width: 75rem;
+  margin: 4rem auto;
+  font-style: italic;
+}
+
+/* shop banner */
+
+.shop-banner {
+  background-color: #f6f9f6;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  align-items: center;
+}
+
+.shop-banner > h2 {
+  font-weight: 500;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+}
+
+.shop-banner > p {
+  color: #b8bec4;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* categories */
+
+.categories > .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories > .top > div {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  column-gap: 1.25rem;
+}
+
+.categories > .top h3 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  width: 40%;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.select {
+  justify-content: flex-end;
+}
+
+.select > select {
+  width: 25%;
+  color: #333;
+}
+
+.categories > .top input {
+  width: 40%;
+  outline: none;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+}
+
+.bottom {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.bottom > .left {
+  flex: 1;
+}
+
+.bottom > .right {
+  flex: 4;
+}
+
+.left > h4 {
+  width: 100%;
+  background-color: #0f100d;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  color: #ccc;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.left > ul {
+  list-style: none;
+  padding: 0.5rem 1.5rem;
+}
+
+.left > h5 {
+  width: 100%;
+  background-color: #f6f9f6;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  color: #ccc;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.left > ul > li {
+  padding: 0.5rem 0;
+}
+
+.left > ul > li > a {
+  color: #b8bec4;
+  text-decoration: none;
+}
+
+.left > ul > li > a:hover {
+  color: #dab46d;
+  cursor: pointer;
+}
+
+.left > ul > li > a.active {
+  color: #dab46d;
+}
+
+.bottom > .right {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom > .right.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination span {
+  display: inline-block;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin-right: 0.25rem;
+  padding: 0.5rem;
+}
+
+.pagination > p {
+  color: #b8bec4;
+  margin-top: 0.5rem;
+}
+
+.bottom > .right.column > .pagination {
+  align-self: flex-end;
+}
+
+.pagination .page-number {
+  display: inline-block;
+  color: #ccc;
+  background-color: #0f100d;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin-right: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Shop responsive */
+@media (max-width: 33.25rem) {
+  .select > select {
+    width: 85%;
+  }
+
+  .categories > .top {
+    margin-bottom: 1rem;
+  }
+  .categories > .top > div:last-child {
+    flex: 1;
+  }
+
+  .categories > .top input {
+    width: 80%;
+  }
+
+  .bottom > .left {
+    flex: 2;
+  }
+
+  .bottom > .right {
+    flex: 3;
+  }
+
+  .bottom > .right.column > .pagination {
+    align-self: center;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .shop {
+    margin-top: 10rem;
+  }
+}
